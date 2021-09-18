@@ -4,7 +4,7 @@ const { mongoose } = require("./db");
 const cors = require("cors");
 const path = require("path")
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use("/uploads", express.static("uploads"));
