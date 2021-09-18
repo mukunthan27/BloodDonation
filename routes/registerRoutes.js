@@ -76,6 +76,7 @@ app.post("/sendOTP", async (req, res) => {
                 if (!error) {
                     console.log("Email Sent", info.response);
                     emailARR.push(lowerMail)
+                    console.log(OTP)
                     otpARR.push(OTP)
                     res.json("yes")
                 } else {
