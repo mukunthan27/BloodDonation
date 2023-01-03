@@ -60,13 +60,13 @@ app.post("/sendOTP", async (req, res) => {
             var transport = nodemailer.createTransport({
                 service: "gmail",
                 auth: {
-                    user: "noreply.blooddonar@gmail.com",
+                    user: "needhelp.blooddonor@gmail.com",
                     pass: "saroflix112001"
                 }
             });
 
             var mailOptions = {
-                from: "noreply.blooddonar@gmail.com",
+                from: "needhelp.blooddonor@gmail.com",
                 to: lowerMail,
                 subject: "OTP VERIFICATION",
                 html: "<p><center><strong>From BloodDonor Site</strong></center></p><p>Hi,</p><p>OTP: "+ OTP+"</p>"
